@@ -1,16 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+body {
+    background-color: #D7CEC7;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Audiowide', cursive;
+    color: #76323F;
+}
+
+.content {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.buttons {
+    padding: 20px;
+    background-color: #565656;
+    border-radius: 5px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+#pick-color {
+    display: block;
+outline: none;
+border: none;
+
+
+background-color: rgba(0,0,0,0);
+
+height: 100px;
+width:100px;
+
+}
+
 .container {
+    background-color: white;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
     display: flex;
     flex-wrap: wrap;
-    width: 148px;
+    width: 700.5px;
+    height: 700.5px;
+    border: 20px solid #565656;
     justify-content: center;
+    
+    
 }
 
 .container div {
-    height: 35px;
-    width: 35px;
-    border: 1px solid grey;
+
+    /* border: 1px solid rgb(126, 126, 126, 0.5); */
 }
 
-.hover {
-    background-color: rgb(172, 172, 172);
+.click {
+    background-color: black;
 }
+
+.erase {
+    background-color: white;
+}
+
+.grid-size, label {
+    color: azure;
+    font-family: sans-serif;
+}
+

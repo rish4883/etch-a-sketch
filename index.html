@@ -7,6 +7,18 @@
     </head>
 
     <body>
-        <div class="container"></div>
+        <h1>Etch-a-sketch</h1>
+        <div class="content">
+            <div class="buttons">
+                <label class="grid-size">Grid Size: 16 x 16</label>
+                <input type="range" min="2" max="100" value="16" class="slider">
+                <button class="clear" type="button">Clear</button>
+                <button class="eraser">Eraser</button>
+                <button class="draw">Draw</button>
+                <label for="pick-color">Pick a Color</label>
+                <input type="color" id="pick-color" value="#000000">
+            </div>        
+            <div class="container"></div>
+        </div>
     </body>
 </html>
