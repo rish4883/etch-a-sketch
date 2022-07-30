@@ -6,7 +6,7 @@ const grid = [];
 createGrid(16);
 setSquareSize(16);
 addGrid();
-draw();
+draw('#000000');
 
 // Function to create the grid squares
 function createGrid(n)  {
@@ -52,18 +52,18 @@ slider.addEventListener('input', () => {
     createGrid(slider.value);
     setSquareSize(slider.value);
     addGrid();
-    draw();
+    draw(color.value);
 });
 
  
 // draw Button Event
 const drawButton = document.querySelector('.draw');
 // Event Listener for drawing
-function draw() {
+function draw(color) {
     grid.forEach( square => {
         square.addEventListener('mouseover', (e) => { 
             e.target.classList.remove('erase');
-            e.target.classList.add('click');
+            e.target.style.backgroundColor = `${color}`;
         });
     });
 }
@@ -94,6 +94,6 @@ eraser.addEventListener('click', handleEraser);
 // Color Picker
 const color = document.querySelector('#pick-color');
 
-
+color.addEventListener('input', () => draw(color.value));
 
 
